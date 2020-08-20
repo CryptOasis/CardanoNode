@@ -12,6 +12,7 @@ Apply
   exit 127
 }
 
-curl -L -s  https://github.com/CryptOasis/CardanoNode/raw/master/builds/$(curl -L  -s  https://github.com/CryptOasis/CardanoNode/raw/master/builds/cardano-node-bin-latest.tgz) | tar -C "$NODE_HOME/bin -zxvf -
+curl -L -s  https://github.com/CryptOasis/CardanoNode/raw/master/builds/$(curl -L  -s  https://github.com/CryptOasis/CardanoNode/raw/master/builds/cardano-node-bin-latest.tgz) |\
+tar -C "$NODE_HOME/bin" -zxvf -
 
 ```
